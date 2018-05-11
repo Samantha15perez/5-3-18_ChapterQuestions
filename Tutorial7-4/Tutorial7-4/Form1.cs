@@ -110,7 +110,20 @@ namespace Tutorial7_4
             
         }
 
-        private void getScoresButton_Click(object sender, EventArgs e)
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void exitButton_Click_1(object sender, EventArgs e)
+        {
+            //close the form.
+            this.Close();
+        }
+
+        private void getScoresButton_Click_1(object sender, EventArgs e)
         {
             double averageScore; //to hold the average score
             int numAboveAverage; //number of above average scores
@@ -131,17 +144,6 @@ namespace Tutorial7_4
             //DisplayScores the number of below average scores
             numBelowAverage = BelowAverage(scoresList);
             belowAverageLabel.Text = numBelowAverage.ToString();
-        }
-
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            //close the form.
-            this.Close();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
